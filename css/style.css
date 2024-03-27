@@ -230,10 +230,19 @@ body {
   right: -20px;
   bottom: 35px;
 }
+.icon-button .icon-button__filled {
+  display: none;
+  background-color: red;
+}
+.icon-button .icon-button__unfilled {
+  display: block;
+}
 
 .icon-button:hover .icon-button__filled {
-  transform: scale(1);
-  transition: all 0.5s cubic-bezier(0, 3, 1, 0.76);
+  display: block;
+}
+.icon-button:hover .icon-button__unfilled {
+  display: none;
 }
 
 /*** Footer Section ***/
@@ -346,6 +355,7 @@ body {
 }
 
 .frame__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 75px;
@@ -354,6 +364,7 @@ body {
   border-radius: 15px;
   margin: 0px 15px 15px 15px;
   padding: 0px 10px 10px 10px;
+  overflow: hidden;
 }
 
 .frame__card__txt h3 {
@@ -414,15 +425,18 @@ body {
 }
 
 .card__price {
+  position: absolute;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 15px;
-  position: relative;
-  top: -35px;
-  left: 90%;
+  right: 20px;
+  bottom: 20px;
 }
 
 .card__icon__checked {
+  position: absolute;
+  right: -80px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,12 +446,7 @@ body {
   width: 40px;
   height: 55px;
   padding: 1rem;
-  margin-right: -4rem;
   transition: all 0.9s ease-in-out;
-  transform: translateX(4rem) rotate(-720deg);
-  left: 90%;
-  bottom: 54%;
-  position: relative;
   cursor: pointer;
 }
 
@@ -446,11 +455,11 @@ body {
 }
 
 .frame__card:hover .card__price {
-  transform: translateX(0);
+  right: 100px;
 }
 
-.frame__card:not(:hover) .card__icon__checked {
-  margin-right: -4rem; /* Hide the element when the card is not hovered */
+.frame__card:hover .card__icon__checked {
+  right: 0;
 }
 
 .card__icon_checked__txt {
