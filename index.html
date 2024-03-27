@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh my food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <!--Header-->
+    <header class="header">
+      <img src="./images/logo/ohmyfood@2x.svg" class="logo" alt="OhMyFood Logo">
+      <div class="header__location">
+        <p class="header__text">
+        <i class="header__icon fa-solid fa-location-dot"></i>Islington, London</p>
+      </div>
+    </header>
+    <!--Hero Section-->
+    <section class="hero">
+      <h1>Book the meal you want</h1>
+      <p class="hero__paragraph">Discover our carefully selected high-end restaurants</p>
+      <button class="explore__button"><a href="#">Explore our restaurants</a></button>
+    </section>
+    <!--How-it-works Section-->
+    <section class="how-it-works">
+      <h2>How it works</h2>
+      <ul class="how-it-works__steps">
+        <li><span class="step_number">1</span><i class="steps_icon fa-solid fa-mobile-screen"></i> Choose a restaurant </li>
+        <li><span class="step_number">2</span><i class="steps_icon fa-solid fa-list"></i> Build your meal</li>
+        <li><span class="step_number">3</span><i class="steps_icon fa-solid fa-store"></i> Enjoy your meal at the restaurant</li>
+      </ul>
+    </section>
+    <!--Restaurants Section-->
+    <section class="restaurants-section">
+      <div class="restaurants-section__title">
+        <h1>Restaurants</h1>
+      </div> 
+      <div class="restaurants__card">
+        <!--First Article-->
+        <article class="card">
+          <a href="KitchenWest.html"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image of kitchen West Restaurant">
+            <span class="new-side-icon">New</span>   
+            <div class="card__content">
+              <div class="card__txt">
+                <h3 class="card__title">Kitchen West</h3>
+                <p class="card__subtitle">Angel</p>
+              </div>   
+              <div class="icon-button">
+                <i class="fa-regular fa-heart icon-button__filled"></i>
+                <i class="fa-regular fa-heart icon-button__unfilled"></i>
+              </div> 
+            </div>
+          </a>    
+        </article>  
+        <!--Second Article-->
+        <article class="card">
+          <a href="Elderflower.html"><img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image of Elderflower Restaurant">
+            <span class="new-side-icon">New</span>  
+            <div class="card__content">
+              <div class="card__txt">
+                <h3 class="card__title">Elderflower</h3>
+                <p class="card__subtitle">Old Street</p>
+              </div>   
+              <div class="icon-button">
+                <i class="fa-regular fa-heart fa-xl"></i> 
+              </div>  
+            </div>
+          </a>
+        </article>  
+        <!--Third Article-->
+        <article class="card">
+          <a href="Shoreditch.html"><img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image of Shoreditch Restaurant">
+            <div class="card__content">
+              <div class="card__txt">
+                <h3 class="card__title">Shoreditch Canteen</h3>
+                <p class="card__subtitle">Shoreditch</p>
+              </div>   
+              <div class="icon-button">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div> 
+            </div>
+          </a>
+        </article> 
+        <!--Fourth Article-->
+        <article class="card">
+          <a href="TheLayBay.html"><img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image of The Lay Bay Restaurant">  
+            <div class="card__content">
+              <div class="card__txt">
+                <h3 class="card__title">The Lay Bay</h3>
+                <p class="card__subtitle">Hoxton</p>
+              </div>   
+              <div class="icon-button">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div> 
+            </div>
+          </a>
+        </article>   
+      </div>  
+    </section>    
+    <!--Footer-->
+    <footer class="footer-section">
+      <img class="footer_logo" src="./images/logo/ohmyfood@2x.svg" alt="Footrer logo">
+      <ul class="footer__section__list">
+        <li class="footer__link" ><i class="footer__icon fa-solid fa-utensils"></i></i><a href="#">Suggest a restaurant</a></li>
+        <li class="footer__link" ><i class="footer__icon fa-solid fa-handshake-angle"></i></i><a href="#">Become a partner</a></li>
+        <li class="footer__link" ><a href="#">Legal Notice</a></li>
+        <li class="footer__link" >
+          <form action="mailto:recipient@example.com" method="post" type="text/plain">
+           <input type="submit" value="Contact">
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
