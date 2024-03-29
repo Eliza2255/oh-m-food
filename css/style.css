@@ -197,6 +197,7 @@
 .restaurants-section .restaurants__card .card .card__subtitle {
   font-size: 17px;
   font-weight: 300;
+  margin-top: -13px;
 }
 
 /*** Footer Section ***/
@@ -267,6 +268,21 @@
   .footer-section .footer__logo {
     position: absolute;
   }
+}
+
+.main-container {
+  overflow: hidden;
+  min-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .icon-button {
@@ -342,21 +358,6 @@
     opacity: 0;
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-.main-container {
-  overflow: hidden;
-  min-width: 370px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: auto;
-}
-
 /**** ELDERFLOWER, KITCHEN WEST, THE LAY BAY, SHOREDITCH****/
 .return__arrow {
   text-decoration: none;
@@ -517,13 +518,6 @@ body {
   box-shadow: 0 4px 8px rgb(170, 170, 170);
 }
 
-.header__section__icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  position: absolute;
-}
-
 .card__price {
   position: absolute;
   font-family: "Roboto";
@@ -546,7 +540,7 @@ body {
   width: 40px;
   height: 55px;
   padding: 1rem;
-  transition: all 0.9s ease-in-out;
+  transition: all 0.6s ease-in-out;
   cursor: pointer;
 }
 
