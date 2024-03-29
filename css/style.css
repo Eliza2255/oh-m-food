@@ -298,11 +298,13 @@
 }
 
 .menu-loader {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
@@ -448,22 +450,35 @@ body {
   margin-left: 80%;
 }
 
-.frame__button .frame__icon__filled {
-  display: none;
-  background-color: red;
+.frame-button {
+  overflow: visible;
+  width: 60px;
+  position: relative;
+  left: 80%;
+  bottom: 45px;
 }
+ .frame-button__filled {
+    display: none;
+    width: 22px !important;
+    height: 21px !important;
+    border-radius: 0 !important; 
+    object-fit: none !important;
+  }
+  .frame-button__unfilled {
+    display: block;
+    width: 22px !important;
+    height: 21px !important;
+    border-radius: 0 !important; 
+    object-fit: none !important;
+  }
 
-.frame__icon .frame__icon_unfilled {
-  display: block;
-}
+  .frame-button:hover .frame-button__filled {
+      display: block;
+    }
+    .frame-button:hover .frame-button__unfilled {
+      display: none;
+    }
 
-.frame__icon:hover .frame__icon__filled {
-  display: block;
-}
-
-.frame__icon:hover .frame__icon__unfilled {
-  display: none;
-}
 
 @media only screen and (min-width: 1024px) {
   .frame__section__all {
@@ -481,9 +496,11 @@ body {
   border: 0px;
   width: 186px;
   height: 50px;
-  left: 28%;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inherit;
 }
 
 .order__button a {

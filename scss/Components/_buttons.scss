@@ -5,6 +5,14 @@
   right: -20px;
   bottom: 35px;
 
+  .icon-button--stacked{
+    overflow: visible;
+    width: 60px;
+    position: absolute;
+    right: -20px;
+    bottom: 35px;
+  }
+
   .icon-button__filled {
     display: none;
     width: 22px !important;
