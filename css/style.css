@@ -276,6 +276,13 @@
   right: -20px;
   bottom: 35px;
 }
+.icon-button .icon-button--stacked {
+  overflow: visible;
+  width: 60px;
+  position: absolute;
+  right: -20px;
+  bottom: 35px;
+}
 .icon-button .icon-button__filled {
   display: none;
   width: 22px !important;
@@ -444,12 +451,6 @@ body {
   margin-top: 5px;
 }
 
-.frame__icon {
-  position: relative;
-  bottom: 40px;
-  margin-left: 80%;
-}
-
 .frame-button {
   overflow: visible;
   width: 60px;
@@ -457,28 +458,30 @@ body {
   left: 80%;
   bottom: 45px;
 }
- .frame-button__filled {
-    display: none;
-    width: 22px !important;
-    height: 21px !important;
-    border-radius: 0 !important; 
-    object-fit: none !important;
-  }
-  .frame-button__unfilled {
-    display: block;
-    width: 22px !important;
-    height: 21px !important;
-    border-radius: 0 !important; 
-    object-fit: none !important;
-  }
 
-  .frame-button:hover .frame-button__filled {
-      display: block;
-    }
-    .frame-button:hover .frame-button__unfilled {
-      display: none;
-    }
+.frame-button__filled {
+  display: none;
+  width: 22px !important;
+  height: 21px !important;
+  border-radius: 0 !important;
+  object-fit: none !important;
+}
 
+.frame-button__unfilled {
+  display: block;
+  width: 22px !important;
+  height: 21px !important;
+  border-radius: 0 !important;
+  object-fit: none !important;
+}
+
+.frame-button:hover .frame-button__filled {
+  display: block;
+}
+
+.frame-button:hover .frame-button__unfilled {
+  display: none;
+}
 
 @media only screen and (min-width: 1024px) {
   .frame__section__all {
