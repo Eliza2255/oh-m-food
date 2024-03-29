@@ -56,8 +56,8 @@
                 <p class="card__subtitle">Angel</p>
               </div>   
               <div class="icon-button">
-                <i class="fa-regular fa-heart icon-button__filled"></i>
-                <i class="fa-regular fa-heart icon-button__unfilled"></i>
+                <img src="./images/heart_filled.svg" class="icon-button__filled"/>
+                <img src="./images/heart_unfilled.svg" class="icon-button__unfilled"/>
               </div> 
             </div>
           </a>    
@@ -114,11 +114,18 @@
         <li class="footer__link" ><i class="footer__icon fa-solid fa-utensils"></i></i><a href="#">Suggest a restaurant</a></li>
         <li class="footer__link" ><i class="footer__icon fa-solid fa-handshake-angle"></i></i><a href="#">Become a partner</a></li>
         <li class="footer__link" ><a href="#">Legal Notice</a></li>
-        <li class="footer__link" >
+        <li class="footer__link">
           <form action="mailto:recipient@example.com" method="post" type="text/plain">
-           <input type="submit" value="Contact">
+           <input type="submit" value="Contact" class="contact-form">
         </li>
       </ul>
     </footer>
+    <div class="menu-loader">
+      <div class="loader-content">
+        <div>
+          <i class="fa-solid fa-spinner"></i>
+        </div>
+      </div>  
+    </div>
   </div>
 </body>

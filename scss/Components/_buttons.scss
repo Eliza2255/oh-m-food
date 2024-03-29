@@ -1,0 +1,31 @@
+.icon-button {
+  overflow: visible;
+  width: 60px;
+  position: absolute;
+  right: -20px;
+  bottom: 35px;
+
+  .icon-button__filled {
+    display: none;
+    width: 22px !important;
+    height: 21px !important;
+    border-radius: 0 !important; 
+    object-fit: none !important;
+  }
+  .icon-button__unfilled {
+    display: block;
+    width: 22px !important;
+    height: 21px !important;
+    border-radius: 0 !important; 
+    object-fit: none !important;
+  }
+
+  &:hover {
+    .icon-button__filled {
+      display: block;
+    }
+    .icon-button__unfilled {
+      display: none;
+    }
+  }  
+}

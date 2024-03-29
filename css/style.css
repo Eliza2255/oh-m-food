@@ -1,30 +1,4 @@
 /******** General *****/
-:root {
-  --main-color: #9356DC;
-  --main-bg-color: #EAEAEA;
-  --filter-bg-color: #FF79DA;
-  --filter-color: #99e2d0;
-}
-
-.fa-solid, .fa-regular {
-  color: #353535;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-.main-container {
-  overflow: hidden;
-  min-width: 370px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: auto;
-}
-
 /**** Header ****/
 .header {
   display: flex;
@@ -32,24 +6,20 @@ body {
   align-items: center;
   margin-bottom: -17px;
 }
-
-.logo {
+.header .logo {
   margin-top: 10px;
   background-color: white;
 }
-
 .header__location {
   display: block;
   width: 100%;
 }
-
 .header__icon {
   color: black;
   width: 12px;
   height: 16px;
   padding-right: 25px;
 }
-
 .header__text {
   font-size: 18px;
   text-align: center;
@@ -65,19 +35,16 @@ body {
   align-items: center;
   background-color: #F6F6F6;
 }
-
 .hero h1 {
   margin-top: 30px;
 }
-
 .hero__paragraph {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
   padding-bottom: 15px;
 }
-
-.explore__button {
+.hero .explore__button {
   font-weight: 500;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   padding: 10px 18px 10px 18px;
@@ -86,14 +53,12 @@ body {
   box-shadow: 0 2px 8px lightgrey;
   margin-bottom: 35px;
 }
-
-.explore__button a {
+.hero .explore__button a {
   font-size: 16px;
   color: white;
   text-decoration: none;
 }
-
-.explore__button:hover {
+.hero .explore__button:hover {
   background: linear-gradient(175deg, #ff93e1, #a16be0);
   box-shadow: 0 4px 8px rgb(170, 170, 170);
 }
@@ -102,8 +67,7 @@ body {
 .how-it-works {
   padding: 30px;
 }
-
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .how-it-works {
     padding: 50px 180px;
   }
@@ -116,7 +80,12 @@ body {
   margin: 0;
   gap: 25px;
 }
-
+@media (min-width: 768px) {
+  .how-it-works ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .how-it-works ul li {
   background-color: #F6F6F6;
   padding: 20px;
@@ -125,17 +94,14 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   width: 100%;
 }
-
-.steps_icon {
+.how-it-works ul li .steps_icon {
   color: #7E7E7E;
   padding: 0px 7px 0px 15px;
 }
-
-.steps_icon:hover {
+.how-it-works ul li .steps_icon:hover {
   color: #9356DC;
 }
-
-.step_number {
+.how-it-works ul li .step_number {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -155,19 +121,30 @@ body {
   background-color: #F6F6F6;
   padding: 20px;
 }
-
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .restaurants-section {
     padding: 50px 180px;
   }
 }
-.restaurants__card {
+@media (min-width: 768px) {
+  .restaurants-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.restaurants-section .restaurants__card {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
-
-.card {
+@media (min-width: 1024px) {
+  .restaurants-section .restaurants__card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.restaurants-section .restaurants__card .card {
   position: relative;
   width: 100%;
   background-color: white;
@@ -176,8 +153,12 @@ body {
   margin-bottom: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
-
-.card img {
+@media (min-width: 1024px) {
+  .restaurants-section .restaurants__card .card {
+    width: calc(50% - 20px);
+  }
+}
+.restaurants-section .restaurants__card .card img {
   position: relative;
   width: 100%;
   height: 180px;
@@ -185,8 +166,7 @@ body {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-
-.restaurants__card .card .new-side-icon {
+.restaurants-section .restaurants__card .card .new-side-icon {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -194,12 +174,11 @@ body {
   font-weight: 500;
   color: #008766;
   border-radius: 5px;
-  background-color: var(--filter-color);
+  background-color: #99e2d0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   padding: 3px 20px;
 }
-
-.card .card__content {
+.restaurants-section .restaurants__card .card .card__content {
   width: 67%;
   padding-left: 15px;
   display: flex;
@@ -207,20 +186,87 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
 }
-
-.card a {
+.restaurants-section .restaurants__card .card a {
   text-decoration: none;
   color: black;
 }
-
-.card__title {
+.restaurants-section .restaurants__card .card .card__title {
   font-size: 18px;
   font-weight: 700;
 }
-
-.card__subtitle {
+.restaurants-section .restaurants__card .card .card__subtitle {
   font-size: 17px;
   font-weight: 300;
+}
+
+/*** Footer Section ***/
+.footer-section {
+  background-color: #353535;
+  padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .footer-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+  }
+}
+.footer-section img {
+  filter: invert(1);
+  color: white;
+  width: 138px;
+  height: 27px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.footer-section .footer__section__list {
+  list-style: none;
+}
+@media (min-width: 1024px) {
+  .footer-section .footer__section__list {
+    position: absolute;
+    list-style: none;
+    padding: 20px;
+    padding-right: 200px;
+    margin: auto;
+    display: flex;
+  }
+}
+.footer-section .footer__section__list a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-section .footer__icon {
+  width: 11px;
+  color: white;
+  padding-right: 15px;
+}
+.footer-section .footer__link {
+  margin-bottom: 7px;
+  margin-left: -20px;
+}
+@media (min-width: 1024px) {
+  .footer-section .footer__link {
+    margin-left: 30px;
+  }
+}
+.footer-section .contact-form {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background: #353535;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: unset;
+  margin-left: -4px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .footer-section .footer__logo {
+    position: absolute;
+  }
 }
 
 .icon-button {
@@ -232,12 +278,18 @@ body {
 }
 .icon-button .icon-button__filled {
   display: none;
-  background-color: red;
+  width: 22px !important;
+  height: 21px !important;
+  border-radius: 0 !important;
+  object-fit: none !important;
 }
 .icon-button .icon-button__unfilled {
   display: block;
+  width: 22px !important;
+  height: 21px !important;
+  border-radius: 0 !important;
+  object-fit: none !important;
 }
-
 .icon-button:hover .icon-button__filled {
   display: block;
 }
@@ -245,41 +297,55 @@ body {
   display: none;
 }
 
-/*** Footer Section ***/
-.footer-section {
-  background-color: #353535;
-  padding-bottom: 20px;
+.menu-loader {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInOut 3s linear forwards;
 }
 
-.footer-section img {
-  filter: invert(1);
-  color: white;
-  width: 138px;
-  height: 27px;
-  margin-top: 20px;
-  margin-left: 20px;
+.loader-content {
+  text-align: center;
+  font-size: 20px;
+  animation: fadeOut 1s ease-in-out forwards;
 }
 
-.footer__section__list {
-  list-style: none;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
-.footer__section__list a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.footer__icon {
-  width: 11px;
-  color: white;
-  padding-right: 15px;
-}
-
-.footer__link {
-  margin-bottom: 7px;
-  margin-left: -20px;
+.main-container {
+  overflow: hidden;
+  min-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 /**** ELDERFLOWER, KITCHEN WEST, THE LAY BAY, SHOREDITCH****/
@@ -343,11 +409,12 @@ body {
   font-family: "roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  border-bottom: 3px solid var(--filter-color);
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
   position: relative;
   margin-bottom: 15px;
   margin-left: 18px;
+  padding-top: 15px;
 }
 
 .frame__subtitle p {
@@ -381,8 +448,21 @@ body {
   margin-left: 80%;
 }
 
-.frame__icon__heart {
-  width: 19pxs;
+.frame__button .frame__icon__filled {
+  display: none;
+  background-color: red;
+}
+
+.frame__icon .frame__icon_unfilled {
+  display: block;
+}
+
+.frame__icon:hover .frame__icon__filled {
+  display: block;
+}
+
+.frame__icon:hover .frame__icon__unfilled {
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -450,62 +530,24 @@ body {
   cursor: pointer;
 }
 
+.card__icon_checked__txt {
+  border: 3px solid white;
+  background-color: white;
+  border-radius: 50%;
+  color: #99e2d0;
+}
+
 .frame__card:hover .card__icon__checked {
   margin-right: 0;
 }
 
 .frame__card:hover .card__price {
   right: 100px;
+  transition: all 1s ease-in-out;
 }
 
 .frame__card:hover .card__icon__checked {
   right: 0;
-}
-
-.card__icon_checked__txt {
-  border: 3px solid white;
-  background-color: white;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 768px) {
-  .how-it-works ul {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .restaurants-section {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .restaurants__card {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .restaurants__card .card {
-    width: calc(50% - 20px);
-  }
-  .footer-section {
-    display: flex;
-    justify-content: flex-end;
-    padding: 40px;
-  }
-  .footer__section__list {
-    position: absolute;
-    list-style: none;
-    padding: 20px;
-    padding-right: 200px;
-    margin: auto;
-    display: flex;
-  }
-  .footer__logo {
-    position: absolute;
-  }
-  .footer__link {
-    margin-left: 30px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
