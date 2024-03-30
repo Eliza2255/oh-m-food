@@ -1,0 +1,132 @@
+.return__arrow {
+  text-decoration: none;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  color: #353535;
+}
+
+.background__image {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 275px;
+  max-height: 383px;
+  margin-top: 10px;
+  @media (min-width: 1024px) {
+    height: 380px;
+  }
+}
+.frame__section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  @media (min-width: 1024px){
+    padding: 50px 180px;
+  }
+}
+.frame__section__all {
+  padding: 0px;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -70px;
+  @media(min-width: 1024px){
+      padding: 50px 180px;
+  }
+  
+}
+.frame__title {
+  font-family: "Shrikhand", sans-serif;
+  margin-left: 18px;
+  margin-bottom: -20px;
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: 400;
+  @media (min-width: 1024px) {
+    text-align: center;
+  }
+}
+.frame__subtitle {
+  font-family: "roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  border-bottom: 3px solid #99e2d0;;
+  width: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 18px;
+  padding-top: 15px;
+  p {
+    margin-bottom: 8px; 
+  }
+}
+
+.frame__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  margin: 0px 15px 15px 15px;
+  padding: 0px 10px 10px 10px;
+  overflow: hidden;
+
+  .frame__card__txt {
+    h3{
+      margin-bottom: 0px;
+    } 
+    p {
+      margin-top: 5px;
+    }
+  }  
+
+  .card__price {
+    position: absolute;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 15px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .card__icon__checked {
+    position: absolute;
+    right: -80px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 40px;
+    height: 55px;
+    padding: 1rem;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    &__txt {
+      border: 3px solid white;
+      background-color: white;
+      border-radius: 50%;
+      color: #99e2d0;
+    }
+    &:hover {
+      margin-right: 0;
+    }
+
+    &:hover {
+      .card__price {
+        right: 100px;
+        transition: all 1s ease-in-out;
+      }
+    }  
+
+    &:hover {
+    right: 0;
+    }
+  }  
+}  

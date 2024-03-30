@@ -1,17 +1,11 @@
+
+
 .icon-button {
   overflow: visible;
   width: 60px;
   position: absolute;
   right: -20px;
   bottom: 35px;
-
-  .icon-button--stacked{
-    overflow: visible;
-    width: 60px;
-    position: absolute;
-    right: -20px;
-    bottom: 35px;
-  }
 
   .icon-button__filled {
     display: none;
@@ -33,6 +27,68 @@
       display: block;
     }
     .icon-button__unfilled {
+      display: none;
+    }
+  }  
+}
+
+.order__button {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  border: 0px;
+  width: 186px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inherit;
+  a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+  box-shadow: 0 4px 8px rgb(170, 170, 170);
+  }
+}
+
+.frame-button {
+  overflow: visible;
+  width: 60px;
+  position: relative;
+  left: 80%;
+  bottom: 45px;
+
+  .frame-button__filled {
+    display: none;
+    width: 22px !important;
+    height: 21px !important;
+    border-radius: 0 !important; 
+    object-fit: none !important;
+  }
+  frame-button__unfilled {
+    display: block;
+    width: 22px !important;
+    height: 21px !important;
+    border-radius: 0 !important; 
+    object-fit: none !important;
+  }
+
+  &:hover {
+    .frame-button__filled{
+      display: block;
+    }
+  }  
+  &:hover {
+    .frame-button__unfilled {
       display: none;
     }
   }  

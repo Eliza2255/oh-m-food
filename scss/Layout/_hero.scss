@@ -14,7 +14,6 @@
     text-align: center;
     padding-bottom: 15px;
   }
-
   .explore__button {
     font-weight: 500;
     background: linear-gradient(175deg, #FF79DA, #9356DC);
@@ -23,13 +22,10 @@
     border: none;
     box-shadow: 0 2px 8px lightgrey;
     margin-bottom: 35px;
-
-    a{
-      font-size: 16px;
-      color: white;
-      text-decoration: none;
-    }
-
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  
     &:hover {
       background: linear-gradient(175deg, #ff93e1, #a16be0);
       box-shadow: 0 4px 8px rgb(170, 170, 170);
